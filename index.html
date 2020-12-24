@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+        <div class="navbar">
+            <p class="logo">MARCH FLY</p>
+            <!--menu-->
+            <ul>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Feature</a></li>
+            </ul>
+            <button class="signIn">SIGN IN</button>
+                <button class="hamburger hamburger--collapse" type="button" onclick="myFunction">
+                    <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+        </div>
+        <!--class navbar ends-->
+        <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function() {
+          // Toggle class "is-active"
+          hamburger.classList.toggle("is-active");
+          // Do something else, like open/close menu
+        });
+        </script>
+    
+        <div class="model">
+            <img src="C:\Users\HP\Documents\Layout 1\assets\bg_image.png" alt="model"  height=" 550">
+        </div>
+        <!--class image ends-->
+        <div class="text-container">
+            <div class="heading">
+                <p>HOW TO GET <br>INSPIRATION</p>
+            </div>
+            <div class="para">
+                <p>Every time I am happy because of my
+                <p> of inspiration, I will also add some energy, maybe eating </p>
+                <p>will make me extremely happy for a foodie like me.  </p>
+            </div>
+
+            <button class="getStarted" type="button">Get Started</button>
+        </div>
+        <!--class container ends-->
+    </div>
+
+</body>
+</html>
